@@ -1,0 +1,89 @@
+.app {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 78% 15%,
+      rgba(22, 131, 255, 0.1),
+      transparent 28%
+    ),
+    #05070b;
+}
+
+.section-label {
+  color: #1683ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.section-heading h2,
+.how-section h2,
+.cta h2 {
+  font-size: clamp(40px, 4vw, 55px);
+  line-height: 1.07;
+  letter-spacing: -2.5px;
+}
+
+.section-heading h2 span,
+.how-section h2 span,
+.cta h2 span {
+  color: #1683ff;
+}
+
+.section-heading > p:last-child {
+  color: #778292;
+  margin-top: 18px;
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* CTA */
+
+.cta {
+  max-width: 1080px;
+  margin: 20px auto 100px;
+  padding: 85px 30px;
+  text-align: center;
+  border: 1px solid #1c2734;
+  border-radius: 17px;
+  background:
+    radial-gradient(
+      circle,
+      rgba(22, 131, 255, 0.1),
+      transparent 60%
+    ),
+    #090d12;
+}
+
+.cta h2 {
+  margin-bottom: 18px;
+}
+
+.cta > p:not(.section-label) {
+  color: #788393;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+/* Shared buttons */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 13px 21px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #087cff;
+  color: white;
+  box-shadow: 0 10px 30px rgba(8, 124, 255, 0.2);
+}
+

@@ -1,0 +1,50 @@
+.why-section {
+  max-width: 1250px;
+  margin: auto;
+  padding: 110px 5%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.why-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.why-card {
+  padding: 27px;
+  border: 1px solid #1b232d;
+  border-radius: 12px;
+  background: #090d12;
+}
+
+.why-card > span {
+  color: #1683ff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.why-card h3 {
+  margin-top: 28px;
+  font-size: 16px;
+}
+
+.why-card p {
+  margin-top: 11px;
+  color: #717c8c;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 950px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .why-section {
+    padding: 80px 5%;
+  }
+}
