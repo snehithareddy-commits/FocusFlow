@@ -14,7 +14,7 @@ function Signup() {
     
     try{
       alert("sending signup request");
-      const response = await fetch("http://localhost:5001/signup", {
+      const response = await fetch("https://focusflow-is-fine.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
