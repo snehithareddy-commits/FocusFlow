@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const User = require("./models/User");
 
 
-mongoose.connect(process.env.MONGOO_URI)
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("MongoDB connected successfully");
   })
