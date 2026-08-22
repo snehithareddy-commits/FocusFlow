@@ -12,7 +12,7 @@ function Signup() {
     const password = event.target.password.value;
 
     try {
-      alert("Sending signup request");
+      
 
       const response = await fetch(
         "https://focusflow-is-fine.onrender.com/signup",
@@ -35,6 +35,7 @@ function Signup() {
 
       if (response.ok) {
         // Signup successful → go to Dashboard
+        alert("signup successful!");
         navigate("/dashboard");
       } else {
         setMessage(data.message);
