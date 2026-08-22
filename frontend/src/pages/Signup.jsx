@@ -35,11 +35,13 @@ function Signup() {
 
       if (response.ok) {
         // Signup successful → go to Dashboard
-        alert("signup successful!");
-        navigate("/dashboard");
-      } else {
-        setMessage(data.message);
-        alert(data.message);
+        setMessage("signup successful!");
+        setTimeout(() =>{
+          navigate("/dashboard");
+        },500);
+      }else {
+        setMessage(data.message || "signup failed");
+        
       }
     } catch (error) {
       console.log("Frontend error:", error);
